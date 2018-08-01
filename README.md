@@ -3,7 +3,7 @@
 In this project you are given a web-based application that reads RSS feeds. [Jasmine](http://jasmine.github.io/) included.
 
 ## How to run the application?
-Clone the repository to your local machine using https://github.com/geyang22/frontend-nanodegree-feedreader.git and open index.html using your favourite browser. Jasmine reader will load at the bottom of the page. The following tests have been implemented:
+Clone the repository to your local machine using https://github.com/geyang22/frontend-nanodegree-feedreader.git and open index.html using your favourite browser. Jasmine reader will load at the bottom of the page. The following tests have been implemented in feedreader.js:
 
 - a test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty
 - a test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty
