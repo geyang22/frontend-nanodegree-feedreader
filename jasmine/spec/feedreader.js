@@ -34,7 +34,7 @@ $(
       it("has a URL defined and the URL is not empty", function() {
         allFeeds.forEach(function(feed) {
           expect(feed.url).toBeDefined();
-          expect(feed.url).not.toBe(0);
+          expect(feed.url.length).not.toBe(0);
         });
       });
 
@@ -45,7 +45,7 @@ $(
       it("has a URL defined and the URL is not empty", function() {
         allFeeds.forEach(function(feed) {
           expect(feed.name).toBeDefined();
-          expect(feed.name).not.toBe(0);
+          expect(feed.name.length).not.toBe(0);
         });
       });
     });
@@ -85,9 +85,8 @@ $(
         });
       });
 
-      it("should be in the feed container before loadFeed is called", function(done) {
-        expect(".feed .entry").toBeDefined();
-        done();
+      it("should be in the feed container before loadFeed is called", function() {
+        expect(".feed .entry".length).toBeGreaterThan(0);
       });
     });
     /* A suite to test new feed selection */
@@ -108,9 +107,8 @@ $(
         });
       });
 
-      it("should be different from the previous selection", function(done) {
+      it("should be different from the previous selection", function() {
         expect(firstSet).not.toBe(secondSet);
-        done();
       });
     });
   })()
