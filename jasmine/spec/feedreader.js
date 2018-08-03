@@ -86,7 +86,7 @@ $(
       });
 
       it("should be in the feed container before loadFeed is called", function() {
-        expect(".feed .entry".length).toBeGreaterThan(0);
+        expect('.feed .entry'.length).toBeGreaterThan(0);
       });
     });
     /* A suite to test new feed selection */
@@ -107,8 +107,9 @@ $(
         });
       });
 
-      it("should be different from the previous selection", function() {
+      it("should be different from the previous selection", function(done) {
         expect(firstSet).not.toBe(secondSet);
+        done();
       });
     });
   })()
